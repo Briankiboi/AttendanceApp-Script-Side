@@ -1,0 +1,80 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run -d chrome
+
+## exception
+
+_TypeError: type 'int' is not a subtype of type '_FutureListener<dynamic, dynamic>?'
+
+```
+#0      Future._removeListeners (dart:async/future_impl.dart:589:22)
+#1      Future._completeWithValue (dart:async/future_impl.dart:721:34)
+#2      Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:807:7)
+#3      _rootRun (dart:async/zone.dart:1525:13)
+#4      _CustomZone.run (dart:async/zone.dart:1422:19)
+#5      _CustomZone.runGuarded (dart:async/zone.dart:1321:7)
+#6      _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1362:23)
+#7      _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#8      _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#9      _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:127:13)
+#10     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:194:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.32.0, on Microsoft Windows [Version 10.0.22621.4317], locale
+    en-US) [4.1s]
+    [32m•[39m Flutter version 3.32.0 on channel stable at C:\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision be698c48a6 (10 days ago), 2025-05-19 12:59:14 -0700
+    [32m•[39m Engine revision 1881800949
+    [32m•[39m Dart version 3.8.0
+    [32m•[39m DevTools version 2.45.1
+
+[32m[✓][39m Windows Version (11 Pro N 64-bit, 22H2, 2009) [18.3s]
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 35.0.1) [21.6s]
+    [32m•[39m Android SDK at C:\Users\BRAYO\AppData\Local\Android\sdk
+    [32m•[39m Platform android-35, build-tools 35.0.1
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    [32m•[39m Java version OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web [38ms]
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[31m[✗][39m Visual Studio - develop Windows apps [34ms]
+    [31m✗[39m Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its
+      default components
+
+[32m[✓][39m Android Studio (version 2024.3.2) [24ms]
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+
+[32m[✓][39m VS Code (version 1.100.2) [18ms]
+    [32m•[39m VS Code at C:\Users\BRAYO\AppData\Local\Programs\Microsoft VS Code
+    [32m•[39m Flutter extension version 3.110.0
+
+[32m[✓][39m Connected device (3 available) [773ms]
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version
+      10.0.22621.4317]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome 137.0.7151.41
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft Edge 136.0.3240.92
+
+[32m[✓][39m Network resources [1,052ms]
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 1 category.
+```

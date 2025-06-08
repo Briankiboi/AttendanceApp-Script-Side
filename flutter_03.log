@@ -1,0 +1,111 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get --no-example
+
+## exception
+
+PathNotFoundException: PathNotFoundException: Creation failed, path = 'C:\Users\BRAYO\Desktop\projects\Qr_code_Attendance_App_Flutter 2\.dart_tool\dartpad' (OS Error: The system cannot find the path specified.
+, errno = 3)
+
+```
+#0      _checkForErrorResponse (dart:io/common.dart:58:9)
+#1      _Directory.create.<anonymous closure> (dart:io/directory_impl.dart:131:9)
+#2      _rootRunUnary (dart:async/zone.dart:1538:47)
+#3      _CustomZone.runUnary (dart:async/zone.dart:1429:19)
+<asynchronous suspension>
+#4      _File.create.<anonymous closure> (dart:io/file_impl.dart:310:11)
+<asynchronous suspension>
+#5      _File.create.<anonymous closure> (dart:io/file_impl.dart:316:15)
+<asynchronous suspension>
+#6      ForwardingFile.create (package:file/src/forwarding/forwarding_file.dart:20:12)
+<asynchronous suspension>
+#7      ForwardingFile.create (package:file/src/forwarding/forwarding_file.dart:20:12)
+<asynchronous suspension>
+#8      _renderTemplateToFile (package:flutter_tools/src/flutter_plugins.dart:40:3)
+<asynchronous suspension>
+#9      _writeWebPluginRegistrant (package:flutter_tools/src/flutter_plugins.dart:1021:3)
+<asynchronous suspension>
+#10     injectBuildTimePluginFilesForWebPlatform (package:flutter_tools/src/flutter_plugins.dart:1224:3)
+<asynchronous suspension>
+#11     WebProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:1045:5)
+<asynchronous suspension>
+#12     FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:396:7)
+<asynchronous suspension>
+#13     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:383:7)
+<asynchronous suspension>
+#14     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1551:27)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#16     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#17     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:494:9)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#19     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+<asynchronous suspension>
+#20     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:98:11)
+<asynchronous suspension>
+#21     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#22     main (package:flutter_tools/executable.dart:102:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.32.0, on Microsoft Windows [Version 10.0.22621.4317], locale en-US) [704ms]
+    • Flutter version 3.32.0 on channel stable at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision be698c48a6 (2 weeks ago), 2025-05-19 12:59:14 -0700
+    • Engine revision 1881800949
+    • Dart version 3.8.0
+    • DevTools version 2.45.1
+
+[✓] Windows Version (11 Pro N 64-bit, 22H2, 2009) [2.5s]
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 35.0.1) [9.2s]
+    • Android SDK at C:\Users\BRAYO\AppData\Local\Android\sdk
+    • Platform android-35, build-tools 35.0.1
+    • Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web [26ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop Windows apps [22ms]
+    ✗ Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[✓] Android Studio (version 2024.3.2) [18ms]
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+
+[✓] VS Code (version 1.100.2) [16ms]
+    • VS Code at C:\Users\BRAYO\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.112.0
+
+[✓] Connected device (4 available) [583ms]
+    • Infinix X6511B (mobile) • 082753725F001328 • android-arm    • Android 11 (API 30)
+    • Windows (desktop)       • windows          • windows-x64    • Microsoft Windows [Version 10.0.22621.4317]
+    • Chrome (web)            • chrome           • web-javascript • Google Chrome 137.0.7151.56
+    • Edge (web)              • edge             • web-javascript • Microsoft Edge 136.0.3240.92
+
+[✓] Network resources [2.3s]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.
+```
